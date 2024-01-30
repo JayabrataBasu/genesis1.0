@@ -128,7 +128,21 @@ export const ChatAppProvider = ({ Children }) => {
     };
     return(
         <ChatAppContect.Provider 
-        value={{readMessage, createAccount, addFriends, sendMessage, readUser, account, userName, friendLists, friendMsg,userLists, loading, error, currentUserName, currentUserAddress,}}
+        value={{
+            readMessage, 
+            createAccount, 
+            addFriends, 
+            sendMessage, 
+            readUser, 
+            account, 
+            userName, 
+            friendLists, 
+            friendMsg, 
+            userLists, 
+            loading, 
+            error, 
+            currentUserName, 
+            currentUserAddress,}}
         >
             {children}
         </ChatAppContect.Provider>
