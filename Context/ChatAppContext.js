@@ -82,14 +82,14 @@ export const ChatAppProvider = ({ Children }) => {
             setLoading(false);
             window.location.reload();
         }   catch (error) {
-            setError("Error while creating your account Pleae reload browser");
+            setError("Error while creating your account Please reload browser");
         }
     };
 
     // add your friends
     const addFriends = async ({ name, accountAddress }) => {
         try {
-            if (name || accountAddress) return setError("Please provide data");
+            //if (name || accountAddress) return setError("Please provide data");
 
             const contract = await connectingWithContract();
             const addMyFriend = await contract.addFriend(accountAddress, name);
