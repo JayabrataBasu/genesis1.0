@@ -8,9 +8,7 @@ import { ChapAppContact } from "../../Context/ChatAppContext";
 import { Model, Error } from "../index";
 import images from "../../assets";
 
-//INTERNAL IMPORT
-import Style from "./NavBar.module.css";
-import { ChatAppContect } from "@/app/Context/ChatAppContext";
+
 const NavBar = () => {
   const menuItems = [
     {

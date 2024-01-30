@@ -3,7 +3,7 @@ import {useRouter} from "next/router";
 
 // Import Internal
 import{
-    ChechIfWalletConnected,
+    CheckIfWalletConnected,
     connectWallet,
     connectingWithContract,
 } from "../Utils/apiFeature";
