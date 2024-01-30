@@ -7,7 +7,7 @@ import { Model } from '../index';
 
 const Filter = () => {
     const { account, addFriends } = useContext(ChatAppContect);
-    const {} = useContext(ChatAppContect);
+    
 
     const [addFriend, setAddFriend] = useState(false);
     return(
@@ -24,7 +24,7 @@ const Filter = () => {
                         <Image src={images.clear} alt="clear" width={20} height={20}/>
                     </button>
                     <button onClick={() => setAddFriend(true)}>
-                        <Image src={images.clear} alt="clear" width={20} height={20}/>
+                        <Image src={images.user} alt="clear" width={20} height={20}/>
                     </button>
                 </div>
             </div>
