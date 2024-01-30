@@ -48,7 +48,7 @@ const fetchContract = (signerOrProvider) =>
  };
 
 
- export const converTime = (time) =>{
+ export const convertTime = (time) =>{
     const newTime = new Date(time.toNumber());
 
     const realTime = newTime.getHours() +
