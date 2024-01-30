@@ -6,7 +6,7 @@ import{
     CheckIfWalletConnected,
     connectWallet,
     connectingWithContract,
-} from "../Utils/apiFeature";
+} from "../Utils/apiFeatures.js";
 
 export const ChatAppContect = React.createContext();
 
