@@ -5,7 +5,7 @@ import { userRouter } from "next/router";
 //INTERNAL IMPORT
 import Style from "./Chat.module.css";
 import images from "../../../assets";
-import { convertTime } from "../../../Utils/apiFeature";
+import { convertTime } from "../../../Utils/apiFeatures";
 import { Loader } from "../../index";
 
 const Chat = ({

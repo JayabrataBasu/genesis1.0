@@ -133,9 +133,9 @@ export const ChatAppProvider = ({ Children }) => {
             createAccount, 
             addFriends, 
             sendMessage, 
-            readUser,
+            readUser, 
             connectWallet,
-            CheckIfWalletConnected, 
+            CheckIfWalletConnected,
             account, 
             userName, 
             friendLists, 
@@ -146,7 +146,7 @@ export const ChatAppProvider = ({ Children }) => {
             currentUserName, 
             currentUserAddress,}}
         >
-            {children}
+            {Children}
         </ChatAppContect.Provider>
     );
 };                     

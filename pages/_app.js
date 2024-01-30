@@ -1,7 +1,6 @@
-import { NavBar } from "@/Components";
 import "../styles/globals.css";
 
-import { ChatAppProvider } from "@/Context/ChatAppContext";
+import { ChatAppProvider } from "../Context/ChatAppContext.js";
 import { NavBar } from "../Components/index";
 const MyApp = ({ Component, pageProps }) => (
   <div>

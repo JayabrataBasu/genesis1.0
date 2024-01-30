@@ -4,11 +4,12 @@ import React, { useEffect, useState, useContext } from "react";
 import { Filter, Friend } from "../Components/index";
 
 const ChatApp = () => {
-    // const {} = useContext(ChatAppContect);
+    const {title} = useContext(ChatAppContect);
     return (
     <div>
-        <Filter />
-        <Friend />
+        {title}
+        {/* <Filter />
+        <Friend /> */}
     </div>);
 };
 
