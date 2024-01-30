@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-import React from 'react'
-=======
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react';
 import image from"next/image";
 
 // internal import
@@ -12,7 +8,6 @@ import Card from "./Card/Card";
 import Chat from './Chat/Chat';
 
 import {ChatAppContect} from "../../Context/ChatAppContext";
->>>>>>> 6f0969c2c720ce4f436360f468d941e72b408169
 
 const Friend = () => {
     // const array = [1, 2, 34, 5, 6];
