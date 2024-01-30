@@ -1,5 +1,5 @@
 import React from 'react';
-import Style from './Error.modile.css';
+import Style from './Error.module.css';
 const Error = () => {
     return(
         <div className={Style.Error}>
