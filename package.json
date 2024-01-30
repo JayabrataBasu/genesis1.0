@@ -12,7 +12,8 @@
     "ethers": "^6.10.0",
     "next": "^14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "web3modal": "^1.9.12"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
