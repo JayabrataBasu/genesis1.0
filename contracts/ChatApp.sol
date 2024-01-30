@@ -42,5 +42,34 @@ contract ChatApp {
     }
 
     //ADD FRIENDS
-    function addFriend(address friend_key, string calldata name) {}
+    function addFriend(address friend_key, string calldata name) external{
+        require(checkUserExists(msg.sender),"Create an account first");
+        require(checkUserExists(friend_key), "User is not registered");
+        require(msg.sender != friend_key, "User cannot add themselves as friends");
+        require(checkAlreeadyFriends(msg.sender, friend_key)==false, "These users are already friends");
+        _addFriend(msg.sender, friend_key, name);
+        _addFriend(friend_key, msg.sender, userList[msg.sender].name);
+    }
+
+    //checkAlreeadyFriends
+    function checkAlreeadyFriends(address pubkey1, address pubkey2) internal view returns(bool){
+        if(userList[pubkey1].friendList.length > userList[pubkey2].friendList.length){
+            address tmp = pubkey1;
+            pubkey1 = pubkey2;
+            pubkey2 = tmp;
+            
+        }
+
+        for(uint256 i = 0; i < userList[pubkey1].friendList.length;i++){
+            if(userList[pubkey1].friendList[i].pubkey = pubkey2)return true;
+        }
+        return false;
+        
+    }
+
+    function _addFriend(address me, address friend_key, string memory name) internal{
+        friend memory newFriend = friend(friend_key, name);
+        userList[me].friendList.push(newFriend);
+        
+    }
 }
