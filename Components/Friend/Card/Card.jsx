@@ -8,7 +8,10 @@ const Card = ({ readMessage, eL, i, readUser }) => {
   console.log(eL);
   return (
     <Link
-      href={{ pathname: "/", query: `${eL.name}`, address: `${eL.pubkey}` }}
+      href={{
+        pathname: "/",
+        query: { name: `${eL.name}`, address: `${eL.pubkey}` },
+      }}
     >
       <div
         className={Style.Card}
@@ -18,7 +21,6 @@ const Card = ({ readMessage, eL, i, readUser }) => {
       <div className={Style.Card_box}>
         <div className={Style.Card_box_left}></div>
         <Image
-          src={images.accountName}
           src={images.accountName}
           alt="userName"
           width={50}

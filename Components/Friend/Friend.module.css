@@ -1,10 +1,10 @@
 
-.friend{
+.Friend{
     width: 80%;
     margin: 1 rem auto;
 }
 
-.freind_box{
+.Friend_box{
     display: grid;
     grid-template-columns: 1.4fr 3fr;
     gap: 2rem;
@@ -16,4 +16,11 @@
     border-radius: .5rem;
 }
 
-@media only screen and (max-width: 35)
+@media only screen and (max-width: 35){
+    .Friend{
+        width: 90%;
+    }
+    .Friend_box{
+        grid-template-columns: 1fr;
+    }
+}
