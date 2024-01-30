@@ -9,4 +9,3 @@ const Error = () => {
 }
 
 export default Error;
-//Hiu
