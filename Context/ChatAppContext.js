@@ -144,7 +144,7 @@ export const ChatAppProvider = ({ Children }) => {
             currentUserName, 
             currentUserAddress,}}
         >
-            {children}
+            {Children}
         </ChatAppContect.Provider>
     );
 };                     
