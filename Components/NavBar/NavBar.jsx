@@ -37,7 +37,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [openModel, setOpenModel] = useState(false);
 
-  const { account, userName } = useContext(ChatAppContect);
+  const { account, userName, connectWallet } = useContext(ChatAppContect);
   return (
     <div className={Style.NavBar}>
       <div className={Style.NavBar_box}>
