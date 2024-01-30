@@ -54,9 +54,12 @@ const NavBar = () => {
                 key={1 + 1}
                 className={
                   '${Style.NavBar_box_right_menu_items}${active == i+1 ? Style.active_btn : ""}}'
-                }
-              ></div>
+                }>
+                <Link className={Style.NavBar_box_right_menu_items_link} href={el.link}>{el.menu}
+                </Link>
+              </div>
             ))}
+
           </div>
         </div>
         <div></div>
